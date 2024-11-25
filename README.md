@@ -18,7 +18,7 @@ Note that the finance agents requires a free API key from the [FMP API](https://
 
 **Agentic Finance Assistant Architecture:**
 
-![Agent Architecture](https://cdn.prod.website-files.com/669f7329c898141d69e166b3/673fe5deaf381401438ce860_AD_4nXcERjctvLckNmk4h1Ykcv7oKU4DJLfG0AlAZC8J7BEnLghGHkJ-906TAfabA8u8WI2WTnl7qAf4yd8yX-Q6vOV7Hl9cDkagqkm8aPeOTBqlN6Y4CR57my3Tvw9U4-cP3pk0AfieLg.png)
+![Agent Architecture](https://cdn.prod.website-files.com/669f7329c898141d69e166b3/67450dc74fe7477ae47bfd3c_67450d9fbe90dfb465774785_agentic-finance-assistant.png)
 
 
 **Installation:**
