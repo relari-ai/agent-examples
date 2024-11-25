@@ -1,0 +1,27 @@
+gather_financial_data:
+  description: >
+    Conduct thorough financial research to gather relevant financial data that can help answer the user query: {query}.
+    Use the available financial tools to fetch accurate and up-to-date information.
+    Focus on finding relevant stock prices, company profiles, financial ratios,
+    and other pertinent financial metrics that answer the user's query: {query}
+  expected_output: >
+    A comprehensive set of financial data points that directly address the query: {query}
+  agent: financial_data_agent
+
+gather_website_information:
+  description: >
+    Browse the web to get relevant information that can help answer the user query: {query}.
+    Transform the website content into a markdown and extract the relevant information.
+  expected_output: >
+    Relevent information from the website that can help answer the user query: {query}
+  agent: web_scraping_agent
+
+summarize_findings:
+  description: >
+    Review the gathered financial data and/or website information and create a clear summary that answers: {query}
+    Analyze the data points and/or website information and present them in a user-friendly format. Try to use tables where appropriate.
+    Make sure your summary directly addresses what the user wants to know.
+  expected_output: >
+    A clear and concise summary that directly answers the user's question: {query}
+    Include relevant financial metrics, qualitative findings and quantitative insights formatted in an easy-to-read manner.
+  agent: output_summarizing_agent

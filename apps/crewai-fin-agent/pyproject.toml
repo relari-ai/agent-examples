@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "crewai-fin-agent"
+version = "0.0.1"
+description = "crewai-fin-agent using crewAI"
+authors = ["Yi Zhang <yi@relari.ai>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+crewai = {extras = ["tools"], version = ">=0.79.4,<1.0.0"}
+
+[tool.poetry.scripts]
+crewai_fin_agent = "crewai_fin_agent.main:run"
+run_crew = "crewai_fin_agent.main:run"
+train = "crewai_fin_agent.main:train"
+replay = "crewai_fin_agent.main:replay"
+test = "crewai_fin_agent.main:test"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

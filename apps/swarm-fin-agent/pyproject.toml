@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "swarm-fin-agent"
+version = "0.0.1"
+description = ""
+authors = ["Yi Zhang <yi@relari.ai>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+swarm = {git = "ssh://git@github.com/openai/swarm.git"}
+python-dotenv = "^1.0.1"
+bs4 = "^0.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
