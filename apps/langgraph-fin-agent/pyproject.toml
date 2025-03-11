@@ -12,6 +12,7 @@ python-dotenv = "^1.0.1"
 langchain-openai = "^0.2.8"
 relari-otel = "0.0.1"
 beautifulsoup4 = "^4.13.3"
+openinference-instrumentation-langchain = "^0.1.35"
 
 
 [build-system]

@@ -29,10 +29,12 @@ poetry run finchat --interactive
 
 Each question will create a new trace with the same run-id.
 
-### Eval
+### Run Verification with Agent Contracts
 
-You can run the evaluation on the sample specifications running
+You can run the pre-defined questions in `specifications.json` with the following command.
 
 ```bash
 poetry run finchat --eval
 ```
+
+If you want to run verification using [agent-contracts](https://github.com/relari-ai/agent-contracts), please follow the documentation here: [Agent Contracts - Finance Agent Example](https://agent-contracts.relari.ai/examples/finance-agent).
