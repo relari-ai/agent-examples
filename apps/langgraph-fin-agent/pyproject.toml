@@ -2,16 +2,21 @@
 name = "langgraph-fin-agent"
 version = "0.1.0"
 description = "Finance agent built using Langgraph"
-authors = ["Yi Zhang <yi@relari.ai>"]
+authors = ["Yi Zhang <yi@relari.ai>", "Pasquale Antonante <pasquale@relari.ai>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.11,<3.12"
 langgraph = "^0.2.45"
 python-dotenv = "^1.0.1"
 langchain-openai = "^0.2.8"
+relari-otel = "0.0.1"
+beautifulsoup4 = "^4.13.3"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+finchat = "langgraph_fin_agent.main:main"
