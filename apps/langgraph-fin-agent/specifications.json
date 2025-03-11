@@ -1,0 +1,134 @@
+{
+    "uuid": "yw936jmp",
+    "scenarios": [
+      {
+        "uuid": "tesla_income",
+        "name": "Tesla Income",
+        "data": "How has Tesla's net income changed over the last five years?",
+        "contracts": [
+          {
+            "uuid": "ctr-tsla-income",
+            "name": "Right Tickers",
+            "requirements": [
+              {
+                "uuid": "req-j3n61sid",
+                "name": "Question about Tesla's net income",
+                "level": "must",
+                "requirement": "Question about Tesla's net income",
+                "type": "Precondition"
+              },
+              {
+                "uuid": "req-sc0xkkxx",
+                "name": "A numeric value for net income expressed in dollars",
+                "level": "should",
+                "on": "output",
+                "requirement": "A numeric value for net income expressed in dollars",
+                "type": "Postcondition"
+              },
+              {
+                "uuid": "req-ghs1pr6x",
+                "name": "Retrieve Tesla's net income with the ticker TSLA",
+                "level": "must",
+                "requirement": "Retrieve Tesla's net income with the ticker TSLA",
+                "type": "Pathcondition"
+              }
+            ]
+          }
+        ],
+        "metadata": {
+          
+        }
+      },
+      {
+        "uuid": "nike_vs_adidas",
+        "name": "Nike vs Adidas",
+        "data": "Between Nike and Adidas, which company has stronger operating margins?",
+        "contracts": [
+          {
+            "uuid": "ctr-nike-vs-adidas",
+            "name": "Right Tickers",
+            "requirements": [
+              {
+                "uuid": "req-1tqgsovv",
+                "name": "Comparison between Nike and Adidas",
+                "level": "must",
+                "requirement": "Comparison between Nike and Adidas",
+                "type": "Precondition"
+              },
+              {
+                "uuid": "req-3yz4o802",
+                "name": "Retrieve Nike financials with the ticker NKE",
+                "level": "must",
+                "requirement": "Retrieve Nike financials with the ticker NKE",
+                "type": "Pathcondition"
+              },
+              {
+                "uuid": "req-4bbi6llo",
+                "name": "Retrieve Adidas financials with the ticker ADDYY",
+                "level": "must",
+                "requirement": "Retrieve Adidas financials with the ticker ADDYY",
+                "type": "Pathcondition"
+              },
+              {
+                "uuid": "req-a50bzp2j",
+                "name": "A numeric value for operating margins expressed in percentage",
+                "level": "should",
+                "on": "output",
+                "requirement": "A numeric value for operating margins expressed in percentage",
+                "type": "Postcondition"
+              }
+            ]
+          }
+        ],
+        "metadata": {
+          
+        }
+      },
+      {
+        "uuid": "de_ratio",
+        "name": "Debt-to-Equity Ratio",
+        "data": "Which car manufacturer has the highest debt-to-equity ratio right now?",
+        "contracts": [
+          {
+            "uuid": "ctr-de-ratio",
+            "name": "Right Tickers",
+            "requirements": [
+              {
+                "uuid": "req-1o9d2re5",
+                "name": "Question about the debt-to-equity ratio",
+                "level": "must",
+                "requirement": "Question about the debt-to-equity ratio",
+                "type": "Precondition"
+              },
+              {
+                "uuid": "req-0b8a77rw",
+                "name": "Output a table",
+                "level": "must",
+                "on": "output",
+                "requirement": "Output a table",
+                "type": "Postcondition"
+              },
+              {
+                "uuid": "req-gmftn5r4",
+                "name": "Include at least Tesla, Ford, and General Motors",
+                "level": "should",
+                "on": "output",
+                "requirement": "Include at least Tesla, Ford, and General Motors",
+                "type": "Postcondition"
+              },
+              {
+                "uuid": "req-mpxqjtp9",
+                "name": "Retrieve the financials of at least 3 car manufacturers",
+                "level": "must",
+                "requirement": "Retrieve the financials of at least 3 car manufacturers",
+                "type": "Pathcondition"
+              }
+            ]
+          }
+        ],
+        "metadata": {
+          
+        }
+      }
+    ]
+  }

@@ -35,3 +35,9 @@ Create a `.env` file and add your OpenAI API key and FMP API key.
 ```bash
 poetry run python src/main.py
 ```
+
+## Verification with Agent Contracts
+
+[Agent Contracts](https://github.com/relari-ai/agent-contracts) is a tool developed by Relari to define, verify and certify agentic AI systems.
+
+The langgraph-fin-agent example includes instrumentation to run verification using a pre-defined specification. Checkout the [README of langgraph-fin-agent](apps/langgraph-fin-agent/README.md) for more details.
